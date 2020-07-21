@@ -15,8 +15,9 @@
       </div>    
     </mat-tab>
     <mat-tab label="Preview">
-      <markdown [data]="text" ngPreserveWhitespaces emoji id="preview">
-      </markdown>
+      <div markdown [data]="text" ngPreserveWhitespaces emoji id="preview">
+        {{text}}
+      </div>
     </mat-tab>
   </mat-tab-group>
 </div>
