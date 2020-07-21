@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex: 1;
+}
+#editor, #editor:active{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding:1rem 1rem 0rem 1rem;
+    min-height: calc(100vh - 11rem);
+    font-size: 18px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
