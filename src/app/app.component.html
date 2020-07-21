@@ -10,10 +10,13 @@
   </mat-toolbar>
   <mat-tab-group mat-align-tabs="center">
     <mat-tab label="Editor">
-      <app-editor></app-editor>
+      <div class="container">
+          <textarea id="editor" ngPreserveWhitespaces [(ngModel)]="text"></textarea>
+      </div>    
     </mat-tab>
     <mat-tab label="Preview">
-      <app-preview></app-preview>
+      <markdown [data]="text" ngPreserveWhitespaces emoji id="preview">
+      </markdown>
     </mat-tab>
   </mat-tab-group>
 </div>

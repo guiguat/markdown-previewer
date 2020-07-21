@@ -11,3 +11,17 @@
     margin: 1rem;
     font-size: 18px;
 }
+
+.container{
+    display: flex;
+    flex: 1;
+}
+#editor{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: calc(100vh - 11rem);
+    padding: 1rem 1rem 1rem 1rem ;
+    outline: none!important;
+    border: none;
+}

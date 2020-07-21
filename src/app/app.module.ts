@@ -1,10 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { EditorComponent } from './components/editor/editor.component';
-import { PreviewComponent } from './components/preview/preview.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,8 +13,6 @@ import { MarkdownModule } from 'ngx-markdown';
 @NgModule({
   declarations: [
     AppComponent,
-    EditorComponent,
-    PreviewComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +20,7 @@ import { MarkdownModule } from 'ngx-markdown';
     MatToolbarModule,
     MatIconModule,
     MatTabsModule,
+    FormsModule,
     MarkdownModule.forRoot()
   ],
   providers: [],
