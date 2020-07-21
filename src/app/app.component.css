@@ -1,0 +1,13 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+.grade-icon-btn{
+    color: white;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+.grade-icon-btn > span{
+    margin: 1rem;
+    font-size: 18px;
+}
